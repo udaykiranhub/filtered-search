@@ -1,70 +1,168 @@
-# Getting Started with Create React App
+# Product Management Dashboard - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the frontend code for the **Product Management Dashboard**, an interactive interface allowing users to search and filter product data based on criteria like Category, Company, Product Name, and Packing. This frontend connects to a backend API that handles data storage and retrieval (the backend code is hosted in a separate repository).
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The **Product Management Dashboard** frontend provides an easy-to-use interface for users to search and filter product data stored in a MongoDB database via a Node.js/Express backend API. This application is perfect for managing and displaying products by Category, Company, Product Name, and Packing.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Search & Filter Options**: Search products by Category, Company, Product Name, and Packing.
+- **Real-Time Filtering**: Responsive filtering to display relevant products in real-time.
+- **User-Friendly Interface**: Clean and intuitive dashboard design for efficient browsing.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js, Axios for API communication, CSS/SASS for styling
+- **Backend API**: Node.js and Express (hosted separately)
+- **API Communication**: Axios for making HTTP requests to the backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup and Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- [Node.js](https://nodejs.org/) (version 14.x or above)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/kushal023/punsatva_frontend.git
+   cd punsatva_frontend
+   npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Product Management Dashboard - Frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This repository contains the frontend code for the **Product Management Dashboard**, an interactive interface that allows users to search and filter product data based on criteria such as Category, Company, Product Name, and Packing. This frontend connects to a backend API responsible for data storage and retrieval (the backend code is hosted in a separate repository).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Table of Contents
 
-### Code Splitting
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Project Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The **Product Management Dashboard** frontend provides a user-friendly interface to search and filter product data stored in a MongoDB database, accessed through a Node.js/Express backend API. This application is ideal for managing and displaying products by Category, Company, Product Name, and Packing.
 
-### Making a Progressive Web App
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Search & Filter Options**: Search products by Category, Company, Product Name, and Packing.
+- **Real-Time Filtering**: Responsive filtering displays relevant products instantly.
+- **User-Friendly Interface**: Clean and intuitive dashboard design for efficient browsing.
 
-### Advanced Configuration
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Frontend**: React.js, Axios for API communication, CSS/SASS for styling
+- **Backend API**: Node.js and Express (hosted separately)
+- **API Communication**: Axios for making HTTP requests to the backend
 
-### Deployment
+## Setup and Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Prerequisites
 
-### `npm run build` fails to minify
+- [Node.js](https://nodejs.org/) (version 14.x or above)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Steps
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/product-management-dashboard-frontend.git
+   cd product-management-dashboard-frontend
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Configure API Endpoint:**
+
+   In `src/services/api.js` (or the appropriate configuration file), specify the backend API URL. Replace `BACKEND_API_URL` with your backend server URL (e.g., `http://localhost:3001`).
+
+   ```javascript
+   const BASE_URL = "BACKEND_API_URL"; // Set this to your backend server's URL
+   ```
+
+4. **Start the frontend server:**
+
+   ```bash
+   npm start
+   ```
+
+   The frontend will run on `http://localhost:3000`.
+
+## Usage
+
+1. **Dashboard Interface**: Access the search and filter options on the main dashboard to find products based on Category, Company, Product Name, and Packing.
+2. **Real-time Results**: The interface updates dynamically to show filtered products matching the selected criteria.
+
+## Folder Structure
+
+```
+product-management-dashboard-frontend/
+├── public/                 # Static files
+├── src/
+│   ├── components/         # Reusable UI components (e.g., SearchBar, ProductTable)
+│   ├── pages/              # Main dashboard page
+│   ├── services/           # API call setup (Axios instance)
+│   ├── App.js              # Root component
+│   └── index.js            # Entry point
+└── README.md
+```
+
+## API Endpoints
+
+The frontend relies on the following backend API endpoints (assuming the backend server is running separately):
+
+1. **Search Products**
+
+   - **Endpoint**: `POST /search`
+   - **Description**: Search for products based on various fields.
+   - **Request Body** (example):
+     ```json
+     {
+       "Category": "Beverages",
+       "Company": "ABC Corp",
+       "Product_Name": "Green Tea"
+     }
+     ```
+
+## Contributing
+
+1. **Fork** this repository.
+2. **Create** a branch for your feature (`git checkout -b feature-name`).
+3. **Commit** your changes (`git commit -m 'Add feature'`).
+4. **Push** to the branch (`git push origin feature-name`).
+5. **Create** a pull request.
+
+## License
+
+This project is licensed under the MIT License.
